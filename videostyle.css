@@ -1,0 +1,63 @@
+﻿.plyr--video {
+    height: 335px;
+}
+.plyr__control--overlaid {
+    background: #ffeb3b !important;
+    color: #fff !important;
+}
+.video-container {
+    width: 48%;
+    position: initial;
+}
+
+.video-list {
+    display: flex;
+    justify-content:space-between;
+}
+
+.change-video {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 6px solid #fef4bc;
+    transition: box-shadow 0.3s linear;
+    cursor: pointer;
+    background: #fef4bc;
+}
+
+.change-video img {
+    width:130px;
+}
+
+    .change-video:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    }
+
+    .change-video.active {
+        border: 6px solid #e9b707;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+        color: #FFF;
+        background: #e9b707;
+    }
+
+    /*----------------Media--------------------*/
+@media (max-width:1280px) {
+    .video-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:768px) {
+    
+    .video-container {
+        width: 100%;
+    }
+}
+@media (max-width:320px) {
+    .plyr--video {
+        height: 180px;
+    }
+    .change-video img {
+        width: 110px;
+    }
+}

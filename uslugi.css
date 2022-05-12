@@ -1,0 +1,35 @@
+.uslugi {
+    padding: 20px;
+}
+
+.us__cont {
+    display: flex;
+}
+
+.us__card {
+    display: flex;
+    width: 32%;
+    margin: 20px auto;
+    box-shadow: 0px 3px 5px 0px grey;
+    flex-direction: column;
+    background: white;
+    transition: 0.3s;
+}
+
+.us__card:hover {
+    box-shadow: 0px 6px 12px 3px grey;
+}
+
+.card__item {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.card__item h3 {
+    text-align: center;
+}

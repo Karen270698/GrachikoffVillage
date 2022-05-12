@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+.partner {
+    padding: 20px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.part {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.friend {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 black;
+    max-width: 300px;
+    height: 470px;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.friend img {
+    width: 100%;
+    height: 120px;
+}
+
+.abo__title {
+    color: black;
+    margin: 0;
+    font-size: 28px;
+}
+
+.abo__text {
+    color: black;
+    margin: 8px 5px;
+}
+
+.bar a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 35px;
+}
+
+.bar {
+    background: white;
+    line-height: 1;
+    transition: background .1s linear, color0.1s linear;
+}
+
+.bar a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.globe {
+    color: black;
+}
+
+.vk {
+    color: SteelBlue;
+}
+
+.fcb {
+    color: #4267B2;
+}
+
+/*-------------Media------------*/
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {
+    .part {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .friend {
+        margin: 20px auto;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .friend {
+        max-width: 270px;
+        height: 410px;
+    }
+
+    .friend img {
+        height: 90px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .abo__title {
+        font-size: 16px;
+    }
+
+    .abo__text {
+        font-size: 14px;
+    }
+}

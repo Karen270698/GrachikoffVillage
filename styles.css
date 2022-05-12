@@ -1,0 +1,200 @@
+hr {
+    width: 100%;
+    height: 3px;
+    border: 0;
+    margin: 15px 0;
+    background-color: black;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.section {
+    padding: 20px 0;
+    background: url(img/background-pc-gamma.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1280px;
+    background: rgb(255 255 255 / 85%);
+    margin: auto;
+}
+
+.one {
+    display: flow-root;
+    padding: 20px 30px 0;
+}
+
+.two {
+    display: flow-root;
+    padding: 0 30px 20px;
+}
+
+.supcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.supcontainer p {
+    width: 48%;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/*------------------------------------*/
+.news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    width: 48%;
+    background: linear-gradient(135deg, #7c0000 0%, #ffd234 28%, #FFF 30%, #FFF 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 5px;
+    border-radius: 6px;
+}
+
+.first img {
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 70%);
+    margin: 25px;
+    box-sizing: border-box;
+    width: 85%;
+}
+
+.second {
+    width: 48%;
+    background: linear-gradient(225deg, #7c0000 0%, #ffd234 28%, #FFF 30%, #FFF 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 5px;
+    border-radius: 6px;
+}
+
+.second img {
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 70%);
+    margin: 25px;
+    box-sizing: border-box;
+    width: 85%;
+}
+
+.img-data {
+    font-size: 16px;
+    margin: 0 25px;
+}
+
+/*----------------Media--------------------*/
+@media screen and (max-width:1280px) {
+    .slider {
+        margin: 150px auto 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .one-section img,
+    .two-section img {
+        width: 40%;
+    }
+
+    .img-data {
+        font-size: 14px;
+    }
+
+    .one-section,
+    .two-section {
+        width: 100%;
+    }
+
+    .supcontainer {
+        font-size: 18px;
+    }
+
+    .supcontainer p {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .one {
+        display: grid;
+    }
+
+    .one-section,
+    .two-section {
+        width: 100%;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .one-section img,
+    .two-section img {
+        width: 55%;
+    }
+
+    .news {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .first,
+    .second {
+        width: 85%;
+    }
+
+    .supcontainer {
+        flex-direction: column;
+    }
+
+    .supcontainer p {
+        width: 100%;
+        font-size: 14px;
+        padding: 0 0 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .one-section img,
+    .two-section img {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .first,
+    .second {
+        width: 100%;
+    }
+
+    .img-data {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+
+}
