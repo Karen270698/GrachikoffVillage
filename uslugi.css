@@ -4,6 +4,7 @@
 
 .us__cont {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .us__card {
@@ -30,6 +31,33 @@
     padding: 5px;
 }
 
+.card__item img {
+    width: 100%;
+}
+
 .card__item h3 {
     text-align: center;
+}
+
+/*---------Media---------*/
+@media screen and (max-width:1024px) {
+    .us__card {
+        width: 47%;
+    }
+
+    .card__item h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .us__card {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card__item h3 {
+        font-size: 18px;
+    }
 }
